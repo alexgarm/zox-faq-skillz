@@ -7,7 +7,7 @@ type Props = {
 
 const SubjectList =({subjects}: Props)=> {
     return(
-        <div>fdfsgd</div>
+       
     )
 
 }

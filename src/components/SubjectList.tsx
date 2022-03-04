@@ -8,8 +8,13 @@ type Props = {
 }
 
 const SubjectList =({data}: Props)=> {
+    
     return(
-        <div> {data.map(item => {item.title})}</div>
+        <div>
+             {data.map((item: ISubject | undefined) => {
+            return <Subject subject = {item}/>
+        })}
+        </div>
        
      
 

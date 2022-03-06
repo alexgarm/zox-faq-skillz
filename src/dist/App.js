@@ -5,7 +5,7 @@ var SubjectList_1 = require("./components/SubjectList");
 require("./App.css");
 var data_1 = require("./data/data");
 function App() {
-    return react_1["default"].createElement(SubjectList_1["default"], { subjects: data_1["default"] });
+    return react_1["default"].createElement(SubjectList_1["default"], { data: data_1["default"] });
 }
 exports["default"] = App;
 

@@ -6,7 +6,7 @@ import data from './data/data'
 
 function App() {
 
-    return <SubjectList subjects={data} />
+    return <SubjectList data={data} />
     
 
 }

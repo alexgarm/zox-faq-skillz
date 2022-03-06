@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {ISubject} from '../types/types'
 import quesion from "./dist/quesion";
-import Quesion from "./dist/quesion";
+import Question from "./Question";
 
 type Subject  = {
   subject: ISubject
@@ -17,9 +17,9 @@ const Subject = ({ subject }: Props) => {
          {subject?.title}
          <div>
              {
-                 subject?.questions.map(quesion => {
-                     return <Quesion quesion/>
-                 }) 
+                 subject?.questions.map(question => {
+                     return <Question question = {question}/>
+                 })
              }
              
          </div>
